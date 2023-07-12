@@ -14,24 +14,22 @@ import {SecondPage} from "./Components/SecondPage/SecondPage";
 
 function App() {
   return (
-  <BrowserRouter>
+      <>
+
       <Header/>
       <ButtonViber/>
 
-  <Navigation/>
-  <Routes >
+          <PhotoGallery  />
 
-      <Route exact path="/" element={<PhotoGallery  />} />
-
-      <Route path="/second" element={<SecondPage/>} />
-
-      <Route path="/navigate" element={"hello 333"} />
-
-  </Routes>
-      <ModelWindow></ModelWindow>
+          <ModelWindow></ModelWindow>
       <Footer/>
-</BrowserRouter>
+</>
   );
 }
 
 export default App;
+// <Route exact path="/" element={} />
+
+// <Route path="/second" element={<SecondPage/>} />
+//  // <Navigation/> // <BrowserRouter></BrowserRouter>  <Routes > </Routes>
+// <Route path="/navigate" element={"hello 333"} />
